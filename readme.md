@@ -12,13 +12,14 @@ API REST de gestion de budget personnel, construit avec Node.js et MongoDB. Elle
 
 ## Stack Technique 
 
-| Technologie | Rôle |
-| React avec TypeScript | Création des différentes pages |
-| NodeJS | Création de backend |
-| MongoDB | Base des données |
-| JWT | Authentification |
-| Docker | Containerisation |
-| Swagger | Documentation API |
+| Technologie | Utilisation |
+|--------------|-------------|
+| React + TypeScript | Développement du frontend |
+| Node.js + Express.js | Développement de l'API REST et du backend |
+| MongoDB | Base de données NoSQL |
+| JWT | Authentification sécurisée des utilisateurs |
+| Docker | Conteneurisation de l'application |
+| Swagger | Génération et consultation de la documentation de l'API |
 
 ## Auteur
 
