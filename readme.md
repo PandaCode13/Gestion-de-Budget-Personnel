@@ -14,7 +14,7 @@ API REST de gestion de budget personnel, construit avec Node.js et MongoDB. Elle
 
 | Technologie | Utilisation |
 |--------------|-------------|
-| React + TypeScript | Développement du frontend |
+| React + JavaScript | Développement du frontend |
 | Node.js + Express.js | Développement de l'API REST et du backend |
 | MongoDB | Base de données NoSQL |
 | JWT | Authentification sécurisée des utilisateurs |
