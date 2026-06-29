@@ -41,10 +41,7 @@ export default function Navbar() {
         </Link>
 
         {/* BOUTON MOBILE */}
-        <button
-          className="menu-btn"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
+        <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
           ☰
         </button>
 
@@ -53,28 +50,16 @@ export default function Navbar() {
           {/* PUBLIC */}
           {!token && (
             <>
-              <Link
-                to="/home"
-                onClick={closeMenu}
-                className="nav-link"
-              >
+              <Link to="/home" onClick={closeMenu} className="nav-link">
                 Accueil
               </Link>
 
               {/* Corrigé : /login */}
-              <Link
-                to="/login"
-                onClick={closeMenu}
-                className="nav-link"
-              >
+              <Link to="/login" onClick={closeMenu} className="nav-link">
                 Se connecter
               </Link>
 
-              <Link
-                to="/register"
-                onClick={closeMenu}
-                className="nav-link"
-              >
+              <Link to="/register" onClick={closeMenu} className="nav-link">
                 Inscription
               </Link>
             </>
@@ -92,6 +77,46 @@ export default function Navbar() {
               </Link>
 
               <Link
+                to="/dashboard/analytique"
+                onClick={closeMenu}
+                className="nav-link"
+              >
+                Analytique des données
+              </Link>
+
+              <Link
+                to="/dashboard/monthDepense"
+                onClick={closeMenu}
+                className="nav-link"
+              >
+                Dépense du mois
+              </Link>
+
+              <Link
+                to="/dashboard/allDepenses"
+                onClick={closeMenu}
+                className="nav-link"
+              >
+                Tous les dépenses
+              </Link>
+
+              <Link
+                to="/dashboard/Revenus"
+                onClick={closeMenu}
+                className="nav-link"
+              >
+                Revenus
+              </Link>
+
+              <Link
+                to="/dashboard/Categories"
+                onClick={closeMenu}
+                className="nav-link"
+              >
+                Catégories
+              </Link>
+
+              <Link
                 to="/dashboard/user/profiles"
                 onClick={closeMenu}
                 className="nav-link"
@@ -99,10 +124,7 @@ export default function Navbar() {
                 Profil
               </Link>
 
-              <button
-                onClick={logout}
-                className="logout-btn"
-              >
+              <button onClick={logout} className="logout-btn">
                 Déconnexion
               </button>
             </>
@@ -128,6 +150,22 @@ export default function Navbar() {
               </Link>
 
               <Link
+                to="/dashboard/PDF-Rapport"
+                onClick={closeMenu}
+                className="nav-link"
+              >
+                PDF Rapport
+              </Link>
+
+              <Link
+                to="/dashboard/Messages"
+                onClick={closeMenu}
+                className="nav-link"
+              >
+                Messages des users
+              </Link>
+
+              <Link
                 to="/dashboard/admin/profil"
                 onClick={closeMenu}
                 className="nav-link"
@@ -135,10 +173,7 @@ export default function Navbar() {
                 Profil
               </Link>
 
-              <button
-                onClick={logout}
-                className="logout-btn"
-              >
+              <button onClick={logout} className="logout-btn">
                 Déconnexion
               </button>
             </>
